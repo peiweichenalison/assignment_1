@@ -1,0 +1,150 @@
+{
+	"variables": [],
+	"info": {
+		"name": "assignment_01",
+		"_postman_id": "b20e950d-b821-6291-38c5-d43c80bc1fa5",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "http://localhost:9021/login",
+			"request": {
+				"url": " http://localhost:9021/login",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyj",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Authorization",
+						"value": "Basic ZGF2aWQ6cGFzc3dvcmQ=",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:9021/register",
+			"request": {
+				"url": " http://localhost:9021/register",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": "",
+						"disabled": true
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZXhwIjoxNjQyNDczOTQwfQ.OoDWxJkeG-NHlWmMgT4ZxqdTFGg9lxc1bSliuqWIG3g",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"name\":\"judy\",\n\t\"password\":\"password\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:9021/user",
+			"request": {
+				"url": " http://localhost:9021/user",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZXhwIjoxNjQyNDczOTQwfQ.OoDWxJkeG-NHlWmMgT4ZxqdTFGg9lxc1bSliuqWIG3g",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "get all users"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:9021/user/5",
+			"request": {
+				"url": " http://localhost:9021/user/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZXhwIjoxNjQyNDczOTQwfQ.OoDWxJkeG-NHlWmMgT4ZxqdTFGg9lxc1bSliuqWIG3g",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"admin\":true}"
+				},
+				"description": "update"
+			},
+			"response": []
+		},
+		{
+			"name": " http://localhost:9021/user/7",
+			"request": {
+				"url": " http://localhost:9021/user/7",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "x-access-token",
+						"value": "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6OCwiZXhwIjoxNjQyNDczOTQwfQ.OoDWxJkeG-NHlWmMgT4ZxqdTFGg9lxc1bSliuqWIG3g",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": "delete user"
+			},
+			"response": []
+		}
+	]
+}
